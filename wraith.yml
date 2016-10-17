@@ -1,0 +1,18 @@
+---
+  browser:
+    phantomjs: "phantomjs"
+  domains:
+    baseline: "https://wraith-test.herokuapp.com"
+  snap_file: "wraith.js"
+  directory: "shots"
+  screen_widths:
+    - "300x480"
+    - "800x600"
+  paths:
+    "home": "/"
+  fuzz: "20%"
+  spider_days:
+    - 10
+  mode: "diffs_first"
+  threshold: 10
+
